@@ -1,260 +1,227 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #71c083; -webkit-text-stroke: #71c083}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d7378; -webkit-text-stroke: #6d7378}
-    span.s1 {font-kerning: none; background-color: #171818}
-    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171818; -webkit-text-stroke: 0px #8cd3fe}
-    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171818; -webkit-text-stroke: 0px #6d6d6d}
-    span.s4 {font-kerning: none; color: #cacaca; background-color: #171818; -webkit-text-stroke: 0px #cacaca}
-    span.s5 {font-kerning: none; color: #c27e65; background-color: #171818; -webkit-text-stroke: 0px #c27e65}
-    span.s6 {font-kerning: none; color: #4689cc; background-color: #171818; -webkit-text-stroke: 0px #4689cc}
-    span.s7 {font-kerning: none; color: #b76ff7; background-color: #171818; -webkit-text-stroke: 0px #b76ff7}
-    span.s8 {font-kerning: none; color: #d4d4d4; background-color: #171818; -webkit-text-stroke: 0px #d4d4d4}
-    span.s9 {font-kerning: none; color: #71c083; background-color: #171818; -webkit-text-stroke: 0px #71c083}
-    span.s10 {font-kerning: none; color: #a7c598; background-color: #171818; -webkit-text-stroke: 0px #a7c598}
-    span.s11 {font-kerning: none}
-    span.s12 {font-kerning: none; color: #f67c30; background-color: #171818; -webkit-text-stroke: 0px #f67c30}
-    span.s13 {font-kerning: none; color: #a34f83; background-color: #171818; -webkit-text-stroke: 0px #a34f83}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malayalam Transliteration Tool - Aatmik Geetmala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        textarea { font-family: monospace; scrollbar-width: thin; }
+        textarea::-webkit-scrollbar { width: 6px; }
+        textarea::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
+    </style>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"en"</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">Malayalam Transliteration Tool - Aatmik Geetmala</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s7">@import</span><span class="s4"> </span><span class="s5">url</span><span class="s8">(</span><span class="s1">'https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">body</span><span class="s1"> </span><span class="s8">{</span><span class="s1"> </span><span class="s2">font-family:</span><span class="s1"> </span><span class="s9">'Inter'</span><span class="s8">,</span><span class="s1"> </span><span class="s5">sans-serif</span><span class="s8">;</span><span class="s1"> </span><span class="s8">}</span></p>
-<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s6">textarea</span><span class="s4"> </span><span class="s8">{</span><span class="s4"> </span><span class="s1">font-family:</span><span class="s4"> </span><span class="s5">monospace</span><span class="s8">;</span><span class="s4"> </span><span class="s1">scrollbar-width:</span><span class="s4"> </span><span class="s5">thin</span><span class="s8">;</span><span class="s4"> </span><span class="s8">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">textarea::-webkit-scrollbar</span><span class="s4"> </span><span class="s8">{</span><span class="s4"> </span><span class="s2">width:</span><span class="s4"> </span><span class="s10">6px</span><span class="s8">;</span><span class="s4"> </span><span class="s8">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">textarea::-webkit-scrollbar-thumb</span><span class="s4"> </span><span class="s8">{</span><span class="s4"> </span><span class="s2">background-color:</span><span class="s4"> #cbd5e1</span><span class="s8">;</span><span class="s4"> </span><span class="s2">border-radius:</span><span class="s4"> </span><span class="s10">10px</span><span class="s8">;</span><span class="s4"> </span><span class="s8">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s3">&lt;</span><span class="s6">body</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-50 min-h-screen p-4 md:p-8"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-6xl mx-auto"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">header</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mb-8 border-b border-slate-200 pb-4 flex flex-col md:flex-row md:items-end justify-between gap-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">h1</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-3xl font-bold text-slate-800"</span><span class="s3">&gt;</span><span class="s1">Malayalam Transliteration Tool</span><span class="s3">&lt;/</span><span class="s6">h1</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-slate-600"</span><span class="s3">&gt;</span><span class="s1">Aatmik Geetmala - Advanced Phonetic Engine</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200 self-start shadow-sm"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>v1.2.0 • Portable Edition</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">header</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-2 gap-8"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- Input Section --&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col space-y-4"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col space-y-2"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-semibold text-slate-700 flex justify-between"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s6">span</span><span class="s3">&gt;</span><span class="s1">Malayalam Input</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s6">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs font-normal text-slate-500 italic"</span><span class="s3">&gt;</span><span class="s1">Paste Malayalam lyrics here</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">textarea</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"input"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full h-[60vh] p-4 border border-slate-300 rounded-xl shadow-inner focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"</span><span class="s4"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"Paste your Malayalam lyrics here..."</span><span class="s3">&gt;&lt;/</span><span class="s6">textarea</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center gap-4"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s4"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"processText()"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-xl shadow-lg shadow-blue-200 transition-all active:scale-95 flex-1 md:flex-none"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>Transliterate All</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"status"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-sm font-medium text-blue-600 italic"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p7"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- Output Section --&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col space-y-4"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex flex-col space-y-2"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"font-semibold text-slate-700 flex justify-between"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s6">span</span><span class="s3">&gt;</span><span class="s1">English Output</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">&lt;</span><span class="s6">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs font-normal text-slate-500 italic"</span><span class="s3">&gt;</span><span class="s1">Copy this to your app database</span><span class="s3">&lt;/</span><span class="s6">span</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">textarea</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"output"</span><span class="s4"> </span><span class="s2">readonly</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"w-full h-[60vh] p-4 border border-slate-300 rounded-xl shadow-inner bg-white focus:ring-2 focus:ring-blue-500 outline-none transition-all"</span><span class="s4"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"Transliterated text will appear here..."</span><span class="s3">&gt;&lt;/</span><span class="s6">textarea</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s4"> </span><span class="s2">onclick</span><span class="s3">=</span><span class="s1">"copyToClipboard()"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-800 hover:bg-slate-900 text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-lg active:scale-95"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>Copy Result</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">section</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-12 p-6 bg-white border border-slate-200 rounded-2xl shadow-sm"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">h2</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-lg font-semibold text-slate-800 mb-4"</span><span class="s3">&gt;</span><span class="s4">Active Phonetic Rules</span><span class="s3">&lt;/</span><span class="s6">h2</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4"</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-3 bg-slate-50 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs text-slate-400 mb-1"</span><span class="s3">&gt;</span><span class="s1">Double 'R'</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"font-bold text-slate-700"</span><span class="s3">&gt;</span><span class="s1">റ്റ → tta</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-3 bg-slate-50 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs text-slate-400 mb-1"</span><span class="s3">&gt;</span><span class="s1">Soft 'D'</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"font-bold text-slate-700"</span><span class="s3">&gt;</span><span class="s1">ട → d</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-3 bg-slate-50 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs text-slate-400 mb-1"</span><span class="s3">&gt;</span><span class="s1">Double 'D'</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"font-bold text-slate-700"</span><span class="s3">&gt;</span><span class="s1">ട്ട → tt</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-3 bg-slate-50 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs text-slate-400 mb-1"</span><span class="s3">&gt;</span><span class="s1">First Person</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"font-bold text-slate-700"</span><span class="s3">&gt;</span><span class="s1">ഞാൻ → njaan</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-3 bg-slate-50 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs text-slate-400 mb-1"</span><span class="s3">&gt;</span><span class="s1">Possessive</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"font-bold text-slate-700"</span><span class="s3">&gt;</span><span class="s1">എൻ്റെ → ente</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"p-3 bg-slate-50 rounded-lg border border-slate-100"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"text-xs text-slate-400 mb-1"</span><span class="s3">&gt;</span><span class="s1">Theological</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s5">"font-bold text-slate-700"</span><span class="s3">&gt;</span><span class="s1">കൃപ → Kripa</span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">section</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p3"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">footer</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-8 text-slate-400 text-sm text-center"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s3">&gt;</span><span class="s1">Built for the Aatmik Geetmala Project • 2024</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">footer</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> mapping </span><span class="s8">=</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'അ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'a'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ആ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'aa'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഇ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'i'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഈ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ee'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഉ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'u'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഊ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'oo'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഋ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ri'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'എ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'e'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഏ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'e'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഐ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ai'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഒ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'o'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഓ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'o'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഔ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'au'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ക'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ka'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഖ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'kha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഗ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ga'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഘ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'gha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ങ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'nga'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ച'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'cha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഛ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'chha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ജ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ja'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഝ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'jha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഞ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'nja'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ട'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'da'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഠ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'tha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഡ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'da'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഢ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'dha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ണ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'na'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ത'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'tha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഥ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'thha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ദ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'dha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ധ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'dhha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ന'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'na'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'പ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'pa'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഫ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'pha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ബ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ba'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഭ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'bha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'മ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ma'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'യ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ya'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ര'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ra'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ല'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'la'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'വ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'va'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ശ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'sha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഷ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'sha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'സ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'sa'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഹ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ha'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ള'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'la'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ഴ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'zha'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'റ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ra'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ാ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'aa'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ി'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'i'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ീ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ee'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ു'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'u'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൂ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'oo'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൃ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ri'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'െ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'e'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'േ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'e'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൈ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'ai'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൊ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'o'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ോ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'o'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൗ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'au'</span><span class="s8">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">'ം'</span><span class="s8">:</span><span class="s1"> </span><span class="s9">'m'</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'ഃ'</span><span class="s8">:</span><span class="s1"> </span><span class="s9">'h'</span><span class="s8">,</span></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">'ൻ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'n'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ർ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'r'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൽ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'l'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൾ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'l'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൺ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'n'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൿ'</span><span class="s8">:</span><span class="s4"> </span><span class="s1">'k'</span><span class="s8">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s9">'റ്റ'</span><span class="s8">:</span><span class="s1"> </span><span class="s9">'tta'</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">};</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p5"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s4"> vowelSigns </span><span class="s8">=</span><span class="s4"> </span><span class="s8">[</span><span class="s1">'ാ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ി'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ീ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ു'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൂ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൃ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'െ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'േ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൈ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൊ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ോ'</span><span class="s8">,</span><span class="s4"> </span><span class="s1">'ൗ'</span><span class="s8">];</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> capitalizeFirstLetter</span><span class="s8">(</span><span class="s1">string</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(!</span><span class="s1">string</span><span class="s8">)</span><span class="s1"> </span><span class="s7">return</span><span class="s1"> string</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">let</span><span class="s1"> str </span><span class="s8">=</span><span class="s1"> string</span><span class="s8">.</span><span class="s1">trimStart</span><span class="s8">();</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">str</span><span class="s8">.</span><span class="s1">length </span><span class="s8">===</span><span class="s1"> </span><span class="s12">0</span><span class="s8">)</span><span class="s1"> </span><span class="s7">return</span><span class="s1"> string</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">return</span><span class="s1"> str</span><span class="s8">.</span><span class="s1">charAt</span><span class="s8">(</span><span class="s12">0</span><span class="s8">).</span><span class="s1">toUpperCase</span><span class="s8">()</span><span class="s1"> </span><span class="s8">+</span><span class="s1"> str</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s12">1</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> transliterateMalayalam</span><span class="s8">(</span><span class="s1">text</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">let</span><span class="s1"> result </span><span class="s8">=</span><span class="s1"> </span><span class="s9">""</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">for</span><span class="s1"> </span><span class="s8">(</span><span class="s7">let</span><span class="s1"> i </span><span class="s8">=</span><span class="s1"> </span><span class="s12">0</span><span class="s8">;</span><span class="s1"> i </span><span class="s8">&lt;</span><span class="s1"> text</span><span class="s8">.</span><span class="s1">length</span><span class="s8">;</span><span class="s1"> i</span><span class="s8">++)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">let</span><span class="s1"> char </span><span class="s8">=</span><span class="s1"> text</span><span class="s8">[</span><span class="s1">i</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">let</span><span class="s1"> nextChar </span><span class="s8">=</span><span class="s1"> text</span><span class="s8">[</span><span class="s1">i </span><span class="s8">+</span><span class="s1"> </span><span class="s12">1</span><span class="s8">];</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">char </span><span class="s8">===</span><span class="s1"> </span><span class="s9">'റ'</span><span class="s1"> </span><span class="s8">&amp;&amp;</span><span class="s1"> nextChar </span><span class="s8">===</span><span class="s1"> </span><span class="s9">'്'</span><span class="s1"> </span><span class="s8">&amp;&amp;</span><span class="s1"> text</span><span class="s8">[</span><span class="s1">i</span><span class="s8">+</span><span class="s12">2</span><span class="s8">]</span><span class="s1"> </span><span class="s8">===</span><span class="s1"> </span><span class="s9">'റ'</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>result </span><span class="s8">+=</span><span class="s1"> </span><span class="s9">"tta"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>i </span><span class="s8">+=</span><span class="s1"> </span><span class="s12">2</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">continue</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">mapping</span><span class="s8">[</span><span class="s1">char</span><span class="s8">])</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">mapping</span><span class="s8">[</span><span class="s1">char</span><span class="s8">].</span><span class="s1">endsWith</span><span class="s8">(</span><span class="s9">'a'</span><span class="s8">)</span><span class="s1"> </span><span class="s8">&amp;&amp;</span><span class="s1"> char</span><span class="s8">.</span><span class="s1">length </span><span class="s8">===</span><span class="s1"> </span><span class="s12">1</span><span class="s1"> </span><span class="s8">&amp;&amp;</span><span class="s1"> </span><span class="s8">!</span><span class="s9">'അആഇഈഉഊഋഎഏഐഒഓഔ'</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s1">char</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">vowelSigns</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s1">nextChar</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>result </span><span class="s8">+=</span><span class="s1"> mapping</span><span class="s8">[</span><span class="s1">char</span><span class="s8">].</span><span class="s1">slice</span><span class="s8">(</span><span class="s12">0</span><span class="s8">,</span><span class="s1"> </span><span class="s8">-</span><span class="s12">1</span><span class="s8">)</span><span class="s1"> </span><span class="s8">+</span><span class="s1"> mapping</span><span class="s8">[</span><span class="s1">nextChar</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>i</span><span class="s8">++;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s8">}</span><span class="s1"> </span><span class="s7">else</span><span class="s1"> </span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">nextChar </span><span class="s8">===</span><span class="s1"> </span><span class="s9">'്'</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>result </span><span class="s8">+=</span><span class="s1"> mapping</span><span class="s8">[</span><span class="s1">char</span><span class="s8">].</span><span class="s1">slice</span><span class="s8">(</span><span class="s12">0</span><span class="s8">,</span><span class="s1"> </span><span class="s8">-</span><span class="s12">1</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>i</span><span class="s8">++;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s8">}</span><span class="s1"> </span><span class="s7">else</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>result </span><span class="s8">+=</span><span class="s1"> mapping</span><span class="s8">[</span><span class="s1">char</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s8">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s8">}</span><span class="s1"> </span><span class="s7">else</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>result </span><span class="s8">+=</span><span class="s1"> mapping</span><span class="s8">[</span><span class="s1">char</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s8">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">}</span><span class="s1"> </span><span class="s7">else</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>result </span><span class="s8">+=</span><span class="s1"> char</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">}</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">return</span><span class="s1"> result</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/aa-i/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'aayi'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/aa-u/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'aayu'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/aa-e/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'aaye'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/u-u/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'u'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/e-e/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'e'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/dd/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'tt'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/rra/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'tta'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/rri/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'tti'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/nre/</span><span class="s7">g</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'nte'</span><span class="s8">)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">.</span><span class="s1">replace</span><span class="s8">(</span><span class="s13">/kripa/</span><span class="s7">gi</span><span class="s8">,</span><span class="s1"> </span><span class="s9">'Kripa'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> processText</span><span class="s8">()</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> inputField </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s9">'input'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> input </span><span class="s8">=</span><span class="s1"> inputField</span><span class="s8">.</span><span class="s1">value</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> status </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s9">'status'</span><span class="s8">);</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(!</span><span class="s1">input</span><span class="s8">.</span><span class="s1">trim</span><span class="s8">())</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>status</span><span class="s8">.</span><span class="s1">innerText </span><span class="s8">=</span><span class="s1"> </span><span class="s9">"Input is empty!"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">return</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>status</span><span class="s8">.</span><span class="s1">innerText </span><span class="s8">=</span><span class="s1"> </span><span class="s9">"Processing..."</span><span class="s8">;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout</span><span class="s8">(()</span><span class="s1"> </span><span class="s8">=&gt;</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">const</span><span class="s1"> lines </span><span class="s8">=</span><span class="s1"> input</span><span class="s8">.</span><span class="s1">split</span><span class="s8">(</span><span class="s9">'\n'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">const</span><span class="s1"> processedLines </span><span class="s8">=</span><span class="s1"> lines</span><span class="s8">.</span><span class="s1">map</span><span class="s8">(</span><span class="s1">line </span><span class="s8">=&gt;</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">let</span><span class="s1"> trimmed </span><span class="s8">=</span><span class="s1"> line</span><span class="s8">.</span><span class="s1">trim</span><span class="s8">();</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(!</span><span class="s1">trimmed </span><span class="s8">||</span><span class="s1"> </span><span class="s13">/^\d+$/</span><span class="s8">.</span><span class="s1">test</span><span class="s8">(</span><span class="s1">trimmed</span><span class="s8">)</span><span class="s1"> </span><span class="s8">||</span><span class="s1"> trimmed</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s9">'===='</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s7">return</span><span class="s1"> line</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">let</span><span class="s1"> transliterated </span><span class="s8">=</span><span class="s1"> </span><span class="s9">""</span><span class="s8">;</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">line</span><span class="s8">.</span><span class="s1">startsWith</span><span class="s8">(</span><span class="s9">'**'</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>transliterated </span><span class="s8">=</span><span class="s1"> transliterateMalayalam</span><span class="s8">(</span><span class="s1">line</span><span class="s8">.</span><span class="s1">substring</span><span class="s8">(</span><span class="s12">2</span><span class="s8">));</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s7">return</span><span class="s1"> </span><span class="s9">'**'</span><span class="s1"> </span><span class="s8">+</span><span class="s1"> capitalizeFirstLetter</span><span class="s8">(</span><span class="s1">transliterated</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">const</span><span class="s1"> verseMatch </span><span class="s8">=</span><span class="s1"> line</span><span class="s8">.</span><span class="s1">match</span><span class="s8">(</span><span class="s13">/^(\d+\.)\s*(.*)/</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">verseMatch</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>transliterated </span><span class="s8">=</span><span class="s1"> transliterateMalayalam</span><span class="s8">(</span><span class="s1">verseMatch</span><span class="s8">[</span><span class="s12">2</span><span class="s8">]);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s7">return</span><span class="s1"> verseMatch</span><span class="s8">[</span><span class="s12">1</span><span class="s8">]</span><span class="s1"> </span><span class="s8">+</span><span class="s1"> </span><span class="s9">' '</span><span class="s1"> </span><span class="s8">+</span><span class="s1"> capitalizeFirstLetter</span><span class="s8">(</span><span class="s1">transliterated</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">line</span><span class="s8">.</span><span class="s1">trim</span><span class="s8">().</span><span class="s1">startsWith</span><span class="s8">(</span><span class="s9">'('</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s7">return</span><span class="s1"> transliterateMalayalam</span><span class="s8">(</span><span class="s1">line</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>transliterated </span><span class="s8">=</span><span class="s1"> transliterateMalayalam</span><span class="s8">(</span><span class="s1">line</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s7">return</span><span class="s1"> capitalizeFirstLetter</span><span class="s8">(</span><span class="s1">transliterated</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s8">});</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s9">'output'</span><span class="s8">).</span><span class="s1">value </span><span class="s8">=</span><span class="s1"> processedLines</span><span class="s8">.</span><span class="s1">join</span><span class="s8">(</span><span class="s9">'\n'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>status</span><span class="s8">.</span><span class="s1">innerText </span><span class="s8">=</span><span class="s1"> </span><span class="s9">"Success!"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>setTimeout</span><span class="s8">(()</span><span class="s1"> </span><span class="s8">=&gt;</span><span class="s1"> status</span><span class="s8">.</span><span class="s1">innerText </span><span class="s8">=</span><span class="s1"> </span><span class="s9">""</span><span class="s8">,</span><span class="s1"> </span><span class="s12">3000</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">},</span><span class="s1"> </span><span class="s12">50</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s11"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> copyToClipboard</span><span class="s8">()</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> output </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s9">'output'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>output</span><span class="s8">.</span><span class="s1">select</span><span class="s8">();</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>document</span><span class="s8">.</span><span class="s1">execCommand</span><span class="s8">(</span><span class="s9">'copy'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> status </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s9">'status'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>status</span><span class="s8">.</span><span class="s1">innerText </span><span class="s8">=</span><span class="s1"> </span><span class="s9">"Copied to clipboard!"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout</span><span class="s8">(()</span><span class="s1"> </span><span class="s8">=&gt;</span><span class="s1"> status</span><span class="s8">.</span><span class="s1">innerText </span><span class="s8">=</span><span class="s1"> </span><span class="s9">""</span><span class="s8">,</span><span class="s1"> </span><span class="s12">3000</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+<body class="bg-slate-50 min-h-screen p-4 md:p-8">
+    <div class="max-w-6xl mx-auto">
+        <header class="mb-8 border-b border-slate-200 pb-4 flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <h1 class="text-3xl font-bold text-slate-800">Malayalam Transliteration Tool</h1>
+                <p class="text-slate-600">Aatmik Geetmala - Advanced Phonetic Engine</p>
+            </div>
+            <div class="text-xs text-slate-400 bg-white px-3 py-1 rounded-full border border-slate-200 self-start shadow-sm">
+                v1.2.0 • Portable Edition
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Input Section -->
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-2">
+                    <label class="font-semibold text-slate-700 flex justify-between">
+                        <span>Malayalam Input</span>
+                        <span class="text-xs font-normal text-slate-500 italic">Paste Malayalam lyrics here</span>
+                    </label>
+                    <textarea id="input" class="w-full h-[60vh] p-4 border border-slate-300 rounded-xl shadow-inner focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all" placeholder="Paste your Malayalam lyrics here..."></textarea>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <button onclick="processText()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-xl shadow-lg shadow-blue-200 transition-all active:scale-95 flex-1 md:flex-none">
+                        Transliterate All
+                    </button>
+                    <div id="status" class="text-sm font-medium text-blue-600 italic"></div>
+                </div>
+            </div>
+
+            <!-- Output Section -->
+            <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-2">
+                    <label class="font-semibold text-slate-700 flex justify-between">
+                        <span>English Output</span>
+                        <span class="text-xs font-normal text-slate-500 italic">Copy this to your app database</span>
+                    </label>
+                    <textarea id="output" readonly class="w-full h-[60vh] p-4 border border-slate-300 rounded-xl shadow-inner bg-white focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder="Transliterated text will appear here..."></textarea>
+                </div>
+                
+                <button onclick="copyToClipboard()" class="bg-slate-800 hover:bg-slate-900 text-white font-semibold py-3 px-6 rounded-xl transition-all shadow-lg active:scale-95">
+                    Copy Result
+                </button>
+            </div>
+        </div>
+
+        <section class="mt-12 p-6 bg-white border border-slate-200 rounded-2xl shadow-sm">
+            <h2 class="text-lg font-semibold text-slate-800 mb-4">Active Phonetic Rules</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="text-xs text-slate-400 mb-1">Double 'R'</div>
+                    <div class="font-bold text-slate-700">റ്റ → tta</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="text-xs text-slate-400 mb-1">Soft 'D'</div>
+                    <div class="font-bold text-slate-700">ട → d</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="text-xs text-slate-400 mb-1">Double 'D'</div>
+                    <div class="font-bold text-slate-700">ട്ട → tt</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="text-xs text-slate-400 mb-1">First Person</div>
+                    <div class="font-bold text-slate-700">ഞാൻ → njaan</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="text-xs text-slate-400 mb-1">Possessive</div>
+                    <div class="font-bold text-slate-700">എൻ്റെ → ente</div>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="text-xs text-slate-400 mb-1">Theological</div>
+                    <div class="font-bold text-slate-700">കൃപ → Kripa</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-8 text-slate-400 text-sm text-center">
+            <p>Built for the Aatmik Geetmala Project • 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        const mapping = {
+            'അ': 'a', 'ആ': 'aa', 'ഇ': 'i', 'ഈ': 'ee', 'ഉ': 'u', 'ഊ': 'oo', 'ഋ': 'ri', 'എ': 'e', 'ഏ': 'e', 'ഐ': 'ai', 'ഒ': 'o', 'ഓ': 'o', 'ഔ': 'au',
+            'ക': 'ka', 'ഖ': 'kha', 'ഗ': 'ga', 'ഘ': 'gha', 'ങ': 'nga',
+            'ച': 'cha', 'ഛ': 'chha', 'ജ': 'ja', 'ഝ': 'jha', 'ഞ': 'nja',
+            'ട': 'da', 'ഠ': 'tha', 'ഡ': 'da', 'ഢ': 'dha', 'ണ': 'na',
+            'ത': 'tha', 'ഥ': 'thha', 'ദ': 'dha', 'ധ': 'dhha', 'ന': 'na',
+            'പ': 'pa', 'ഫ': 'pha', 'ബ': 'ba', 'ഭ': 'bha', 'മ': 'ma',
+            'യ': 'ya', 'ര': 'ra', 'ല': 'la', 'വ': 'va', 'ശ': 'sha', 'ഷ': 'sha', 'സ': 'sa', 'ഹ': 'ha',
+            'ള': 'la', 'ഴ': 'zha', 'റ': 'ra',
+            'ാ': 'aa', 'ി': 'i', 'ീ': 'ee', 'ു': 'u', 'ൂ': 'oo', 'ൃ': 'ri',
+            'െ': 'e', 'േ': 'e', 'ൈ': 'ai', 'ൊ': 'o', 'ോ': 'o', 'ൗ': 'au',
+            'ം': 'm', 'ഃ': 'h',
+            'ൻ': 'n', 'ർ': 'r', 'ൽ': 'l', 'ൾ': 'l', 'ൺ': 'n', 'ൿ': 'k',
+            'റ്റ': 'tta'
+        };
+
+        const vowelSigns = ['ാ', 'ി', 'ീ', 'ു', 'ൂ', 'ൃ', 'െ', 'േ', 'ൈ', 'ൊ', 'ോ', 'ൗ'];
+        
+        function capitalizeFirstLetter(string) {
+            if (!string) return string;
+            let str = string.trimStart();
+            if (str.length === 0) return string;
+            return str.charAt(0).toUpperCase() + str.slice(1);
+        }
+
+        function transliterateMalayalam(text) {
+            let result = "";
+            for (let i = 0; i < text.length; i++) {
+                let char = text[i];
+                let nextChar = text[i + 1];
+
+                if (char === 'റ' && nextChar === '്' && text[i+2] === 'റ') {
+                    result += "tta";
+                    i += 2;
+                    continue;
+                }
+
+                if (mapping[char]) {
+                    if (mapping[char].endsWith('a') && char.length === 1 && !'അആഇഈഉഊഋഎഏഐഒഓഔ'.includes(char)) {
+                        if (vowelSigns.includes(nextChar)) {
+                            result += mapping[char].slice(0, -1) + mapping[nextChar];
+                            i++;
+                        } else if (nextChar === '്') {
+                            result += mapping[char].slice(0, -1);
+                            i++;
+                        } else {
+                            result += mapping[char];
+                        }
+                    } else {
+                        result += mapping[char];
+                    }
+                } else {
+                    result += char;
+                }
+            }
+            
+            return result
+                .replace(/aa-i/g, 'aayi')
+                .replace(/aa-u/g, 'aayu')
+                .replace(/aa-e/g, 'aaye')
+                .replace(/u-u/g, 'u')
+                .replace(/e-e/g, 'e')
+                .replace(/dd/g, 'tt')
+                .replace(/rra/g, 'tta')
+                .replace(/rri/g, 'tti')
+                .replace(/nra/g, 'nta')
+                .replace(/nre/g, 'nte')
+                .replace(/kripa/gi, 'Kripa');
+        }
+
+        function processText() {
+            const inputField = document.getElementById('input');
+            const input = inputField.value;
+            const status = document.getElementById('status');
+            
+            if (!input.trim()) {
+                status.innerText = "Input is empty!";
+                return;
+            }
+
+            status.innerText = "Processing...";
+            
+            setTimeout(() => {
+                const lines = input.split('\n');
+                const processedLines = lines.map(line => {
+                    let trimmed = line.trim();
+                    
+                    if (!trimmed || /^\d+$/.test(trimmed) || trimmed.includes('====')) {
+                        return line;
+                    }
+
+                    let transliterated = "";
+
+                    if (line.startsWith('**')) {
+                        transliterated = transliterateMalayalam(line.substring(2));
+                        return '**' + capitalizeFirstLetter(transliterated);
+                    }
+                    
+                    const verseMatch = line.match(/^(\d+\.)\s*(.*)/);
+                    if (verseMatch) {
+                        transliterated = transliterateMalayalam(verseMatch[2]);
+                        return verseMatch[1] + ' ' + capitalizeFirstLetter(transliterated);
+                    }
+
+                    if (line.trim().startsWith('(')) {
+                        return transliterateMalayalam(line);
+                    }
+
+                    transliterated = transliterateMalayalam(line);
+                    return capitalizeFirstLetter(transliterated);
+                });
+                
+                document.getElementById('output').value = processedLines.join('\n');
+                status.innerText = "Success!";
+                setTimeout(() => status.innerText = "", 3000);
+            }, 50);
+        }
+
+        function copyToClipboard() {
+            const output = document.getElementById('output');
+            output.select();
+            document.execCommand('copy');
+            const status = document.getElementById('status');
+            status.innerText = "Copied to clipboard!";
+            setTimeout(() => status.innerText = "", 3000);
+        }
+    </script>
 </body>
 </html>
